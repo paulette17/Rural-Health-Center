@@ -9,7 +9,7 @@
             <div class="col-md-3">
                 <div class="card">
                     <div class="card-body text-center">
-                        <h3 style="color: #3b82f6;">94%</h3>
+                        <h3 style="color: #3b82f6;">86%</h3>
                         <p>Immunization Coverage</p>
                     </div>
                 </div>
@@ -25,7 +25,7 @@
             <div class="col-md-3">
                 <div class="card">
                     <div class="card-body text-center">
-                        <h3 style="color: #3b82f6;">18</h3>
+                        <h3 style="color: #3b82f6;">3</h3>
                         <p>Low Stock Items</p>
                     </div>
                 </div>

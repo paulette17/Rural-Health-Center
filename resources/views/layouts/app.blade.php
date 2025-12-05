@@ -40,24 +40,23 @@
     <!-- SIDEBAR -->
     <div class="col-md-2 sidebar">
         <nav class="nav flex-column">
-            <a class="nav-link active" href="#dashboard" data-bs-toggle="pill">
+            <a class="nav-link {{ request()->routeIs('dashboard') ? 'active' : '' }}" href="{{ route('dashboard') }}">
                 <i class="fas fa-th-large me-2"></i> Dashboard
             </a>
-            <a class="nav-link" href="#immunization" data-bs-toggle="pill">
+            <a class="nav-link {{ request()->routeIs('immunization') ? 'active' : '' }}" href="{{ route('immunization') }}">
                 <i class="fas fa-syringe me-2"></i> Immunization
             </a>
-            <a class="nav-link" href="#inventory" data-bs-toggle="pill">
+            <a class="nav-link {{ request()->routeIs('inventory') ? 'active' : '' }}" href="{{ route('inventory') }}">
                 <i class="fas fa-boxes me-2"></i> Inventory
             </a>
-            <a class="nav-link" href="#appointments" data-bs-toggle="pill">
+            <a class="nav-link {{ request()->routeIs('appointments') ? 'active' : '' }}" href="{{ route('appointments') }}">
                 <i class="fas fa-calendar me-2"></i> Appointments
             </a>
-            <a class="nav-link" href="#reports" data-bs-toggle="pill">
+            <a class="nav-link {{ request()->routeIs('reports') ? 'active' : '' }}" href="{{ route('reports') }}">
                 <i class="fas fa-file-chart-line me-2"></i> Reports
             </a>
         </nav>
     </div>
-
     <!-- MAIN CONTENT -->
     <div class="col-md-10 main-content">
         <div class="tab-content">
