@@ -25,3 +25,7 @@ Route::get('/appointments', function () {
 Route::get('/reports', function () {
     return view('pages.reports');
 })->name('reports');
+
+Route::get('/architecture', function () {
+    return view('pages.architecture');
+})->name('architecture');

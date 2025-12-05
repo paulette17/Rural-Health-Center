@@ -55,6 +55,9 @@
             <a class="nav-link {{ request()->routeIs('reports') ? 'active' : '' }}" href="{{ route('reports') }}">
                 <i class="fas fa-file-chart-line me-2"></i> Reports
             </a>
+            <a class="nav-link {{ request()->routeIs('architecture') ? 'active' : '' }}" href="{{ route('architecture') }}">
+                <i class="fas fa-sitemap me-2"></i> Architecture
+            </a>
         </nav>
     </div>
     <!-- MAIN CONTENT -->
