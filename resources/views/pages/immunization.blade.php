@@ -19,13 +19,13 @@
                     </thead>
                     <tbody>
                         <tr>
-                            <td>Maria Santos</td>
+                            <td>Hansol Vernon</td>
                             <td>2 months</td>
                             <td>BCG</td>
                             <td><span class="badge bg-success">Completed</span></td>
                         </tr>
                         <tr>
-                            <td>Juan Cruz</td>
+                            <td>Kwon Soonyoung</td>
                             <td>3 months</td>
                             <td>Pentavalent</td>
                             <td><span class="badge bg-warning">Pending</span></td>
