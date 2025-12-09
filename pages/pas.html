@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient Appointment Scheduler</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+
+<header>
+    <h1>Patient Appointment Scheduler (PAS)</h1>
+</header>
+
+<aside class="sidebar">
+    <h2 class="logo">RHC System</h2>
+    <a href="index.html">🏠 Dashboard</a>
+    <a href="pages/ims.html">💉 Immunization</a>
+    <a href="pages/msis.html">📦 Inventory</a>
+    <a href="pages/pas.html">📅 Appointments</a>
+    <a href="pages/report.html">📝 Reports</a>
+</aside>
+
+<div class="container">
+
+    <section class="card">
+        <div class="section-title">Book a New Appointment</div>
+        <div class="grid">
+
+            <div>
+                <h3>Patient Information</h3>
+                <input type="text" placeholder="Patient Name">
+                <input type="text" placeholder="Patient ID / Record Number">
+                <input type="text" placeholder="Contact Number">
+            </div>
+
+            <div>
+                <h3>Appointment Details</h3>
+                <select>
+                    <option>Select Service Type</option>
+                    <option>Immunization</option>
+                    <option>Check-Up</option>
+                    <option>Prenatal</option>
+                    <option>Follow-Up</option>
+                </select>
+                <input type="date">
+                <select>
+                    <option>Select Provider</option>
+                    <option>Nurse Seungkwan</option>
+                    <option>Nurse B</option>
+                    <option>Midwife</option>
+                </select>
+                <button>Book Appointment</button>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="card">
+        <div class="section-title">Upcoming Appointments</div>
+        <div class="grid">
+            <div class="card">
+                <h4>Vernon Chwe</h4>
+                <p>Service: Immunization</p>
+                <p>Date: Jan 12, 2025</p>
+                <p>Provider: Nurse Seungkwan</p>
+            </div>
+            <div class="card">
+                <h4>Kim Mingyu</h4>
+                <p>Service: Check-Up</p>
+                <p>Date: Jan 14, 2025</p>
+                <p>Provider: Nurse B</p>
+            </div>
+            <div class="card">
+                <h4>Val Yoon</h4>
+                <p>Service: Prenatal</p>
+                <p>Date: Jan 16, 2025</p>
+                <p>Provider: Midwife</p>
+            </div>
+        </div>
+    </section>
+
+</div>
+
+</body>
+</html>

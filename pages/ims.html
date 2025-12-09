@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Immunization Monitoring System</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+
+<header>
+    <h1>Immunization Monitoring System (IMS)</h1>
+</header>
+
+<nav>
+    <a href="../index.html">Home</a>
+    <a href="ims.html">IMS</a>
+    <a href="msis.html">MSIS</a>
+    <a href="pas.html">PAS</a>
+</nav>
+
+<div class="container">
+
+    <section class="card">
+        <div class="section-title">Register Patient Immunization</div>
+        <div class="grid">
+            <div>
+                <h3>Patient Details</h3>
+                <input type="text" placeholder="Patient Name">
+                <input type="text" placeholder="Child ID / Record Number">
+                <input type="date" placeholder="Date of Birth">
+                <input type="text" placeholder="Parent/Guardian Name">
+                <input type="text" placeholder="Contact Number">
+            </div>
+
+            <div>
+                <h3>Vaccination Details</h3>
+                <select>
+                    <option>Select Vaccine</option>
+                    <option>BCG</option>
+                    <option>Hepatitis B</option>
+                    <option>MMR</option>
+                    <option>DTaP</option>
+                    <option>Polio</option>
+                </select>
+                <input type="text" placeholder="Batch Number">
+                <input type="date" placeholder="Expiry Date">
+                <input type="date" placeholder="Date Given">
+                <button>Save Record</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="card">
+        <div class="section-title">Recent Immunization Records</div>
+        <div class="grid">
+            <div class="card">
+                <h4>Ana Santos</h4>
+                <p>Vaccine: MMR</p>
+                <p>Date: Jan 10, 2025</p>
+                <p>Batch: BMMR-2201</p>
+            </div>
+            <div class="card">
+                <h4>Mark Dela Cruz</h4>
+                <p>Vaccine: Hepatitis B</p>
+                <p>Date: Jan 9, 2025</p>
+                <p>Batch: HBV-0192</p>
+            </div>
+            <div class="card">
+                <h4>Sophia Ramos</h4>
+                <p>Vaccine: Polio</p>
+                <p>Date: Jan 8, 2025</p>
+                <p>Batch: POL-0441</p>
+            </div>
+        </div>
+    </section>
+
+</div>
+
+</body>
+</html>
