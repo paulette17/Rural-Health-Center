@@ -4,70 +4,110 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Medical Supplies Inventory System</title>
-    <link rel="stylesheet" href="../css/styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
 
-<header>
-    <h1>Medical Supplies Inventory System (MSIS)</h1>
+<header class="bg-success text-white py-4">
+    <div class="container">
+        <h1>Medical Supplies Inventory System (MSIS)</h1>
+    </div>
 </header>
 
-<nav>
-    <a href="../index.html">Home</a>
-    <a href="ims.html">Immunization Monitoring</a>
-    <a href="msis.html">Medical Inventory</a>
-    <a href="pas.html">Appointment Scheduler</a>
-    <a href="report.html">Reports</a>
+<nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #0d4f2f;">
+    <div class="container">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="ims.html">Immunization Monitoring</a></li>
+                <li class="nav-item"><a class="nav-link active" href="msis.html">Medical Inventory</a></li>
+                <li class="nav-item"><a class="nav-link" href="pas.html">Appointment Scheduler</a></li>
+                <li class="nav-item"><a class="nav-link" href="report.html">Reports</a></li>
+            </ul>
+        </div>
+    </div>
 </nav>
 
-<div class="container">
+<div class="container my-5">
 
-    <section class="card">
-        <div class="section-title">Add New Supply Item</div>
-        <div class="grid">
-            <div>
-                <h3>Supply Details</h3>
-                <input type="text" placeholder="Item Name">
-                <input type="number" placeholder="Quantity">
-                <input type="date" placeholder="Expiry Date">
-                <input type="text" placeholder="Supplier Name">
-                <button>Add Item</button>
-            </div>
+    <div class="card mb-4">
+        <div class="card-header bg-success text-white">
+            <h5 class="mb-0">Add New Supply Item</h5>
+        </div>
+        <div class="card-body">
+            <div class="row">
+                <div class="col-md-6">
+                    <h6 class="text-success mb-3">Supply Details</h6>
+                    <div class="mb-3">
+                        <input type="text" class="form-control" placeholder="Item Name">
+                    </div>
+                    <div class="mb-3">
+                        <input type="number" class="form-control" placeholder="Quantity">
+                    </div>
+                    <div class="mb-3">
+                        <input type="date" class="form-control" placeholder="Expiry Date">
+                    </div>
+                    <div class="mb-3">
+                        <input type="text" class="form-control" placeholder="Supplier Name">
+                    </div>
+                    <button class="btn btn-success w-100">Add Item</button>
+                </div>
 
-            <div>
-                <h3>Low Stock Alerts</h3>
-                <div class="alert low">• Paracetamol – LOW</div>
-                <div class="alert sufficient">• Syringes – SUFFICIENT</div>
-                <div class="alert critical">• BCG Vaccine – CRITICAL</div>
+                <div class="col-md-6">
+                    <h6 class="text-success mb-3">Low Stock Alerts</h6>
+                    <div class="alert alert-warning mb-2">• Paracetamol – <strong>LOW</strong></div>
+                    <div class="alert alert-success mb-2">• Syringes – <strong>SUFFICIENT</strong></div>
+                    <div class="alert alert-danger mb-2">• BCG Vaccine – <strong>CRITICAL</strong></div>
+                </div>
             </div>
         </div>
-    </section>
+    </div>
 
-    <section class="card">
-        <div class="section-title">Inventory List</div>
-        <div class="grid">
-            <div class="card">
-                <h4>Paracetamol</h4>
-                <p>Quantity: 12</p>
-                <p>Expiry: Feb 20, 2025</p>
-                <p>Status: <span class="status-low">LOW</span></p>
-            </div>
-            <div class="card">
-                <h4>Syringes (10ml)</h4>
-                <p>Quantity: 250</p>
-                <p>Expiry: Dec 31, 2026</p>
-                <p>Status: <span class="status-sufficient">SUFFICIENT</span></p>
-            </div>
-            <div class="card">
-                <h4>BCG Vaccine</h4>
-                <p>Quantity: 3</p>
-                <p>Expiry: Mar 15, 2025</p>
-                <p>Status: <span class="status-critical">CRITICAL</span></p>
+    <div class="card">
+        <div class="card-header bg-success text-white">
+            <h5 class="mb-0">Inventory List</h5>
+        </div>
+        <div class="card-body">
+            <div class="row">
+                <div class="col-md-6 col-lg-4 mb-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <h6 class="card-title">Paracetamol</h6>
+                            <p class="card-text mb-1"><small>Quantity: 12</small></p>
+                            <p class="card-text mb-1"><small>Expiry: Feb 20, 2025</small></p>
+                            <p class="card-text"><small>Status: <span class="badge bg-warning text-dark">LOW</span></small></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <h6 class="card-title">Syringes (10ml)</h6>
+                            <p class="card-text mb-1"><small>Quantity: 250</small></p>
+                            <p class="card-text mb-1"><small>Expiry: Dec 31, 2026</small></p>
+                            <p class="card-text"><small>Status: <span class="badge bg-success">SUFFICIENT</span></small></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <h6 class="card-title">BCG Vaccine</h6>
+                            <p class="card-text mb-1"><small>Quantity: 3</small></p>
+                            <p class="card-text mb-1"><small>Expiry: Mar 15, 2025</small></p>
+                            <p class="card-text"><small>Status: <span class="badge bg-danger">CRITICAL</span></small></p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-    </section>
+    </div>
 
 </div>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

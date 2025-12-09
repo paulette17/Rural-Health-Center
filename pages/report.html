@@ -4,74 +4,114 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>System Reports</title>
-    <link rel="stylesheet" href="../css/styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
 
-<header>
-    <h1>System Reports</h1>
+<header class="bg-success text-white py-4">
+    <div class="container">
+        <h1>System Reports</h1>
+    </div>
 </header>
 
-<nav>
-    <a href="../index.html">Home</a>
-    <a href="ims.html">Immunization Monitoring</a>
-    <a href="msis.html">Medical Inventory</a>
-    <a href="pas.html">Appointment Scheduler</a>
-    <a href="report.html">Reports</a>
+<nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #0d4f2f;">
+    <div class="container">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="ims.html">Immunization Monitoring</a></li>
+                <li class="nav-item"><a class="nav-link" href="msis.html">Medical Inventory</a></li>
+                <li class="nav-item"><a class="nav-link" href="pas.html">Appointment Scheduler</a></li>
+                <li class="nav-item"><a class="nav-link active" href="report.html">Reports</a></li>
+            </ul>
+        </div>
+    </div>
 </nav>
 
-<div class="container">
+<div class="container my-5">
 
-    <section class="card">
-        <div class="section-title">Monthly Summary</div>
-        <div class="grid">
-            <div class="card">
-                <h4>Total Immunizations</h4>
-                <p style="font-size: 28px; color: #0b6e4f; font-weight: bold;">147</p>
-                <p>Administered this month</p>
-            </div>
-            <div class="card">
-                <h4>Pending Appointments</h4>
-                <p style="font-size: 28px; color: #0b6e4f; font-weight: bold;">23</p>
-                <p>Scheduled for next 30 days</p>
-            </div>
-            <div class="card">
-                <h4>Low Stock Items</h4>
-                <p style="font-size: 28px; color: #d32f2f; font-weight: bold;">4</p>
-                <p>Items requiring attention</p>
-            </div>
-            <div class="card">
-                <h4>System Uptime</h4>
-                <p style="font-size: 28px; color: #4caf50; font-weight: bold;">99.8%</p>
-                <p>This month</p>
+    <div class="card mb-4">
+        <div class="card-header bg-success text-white">
+            <h5 class="mb-0">Monthly Summary</h5>
+        </div>
+        <div class="card-body">
+            <div class="row">
+                <div class="col-md-6 col-lg-3 mb-3">
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <h6 class="card-title">Total Immunizations</h6>
+                            <p class="card-text" style="font-size: 32px; color: #0b6e4f; font-weight: bold;">147</p>
+                            <p class="card-text"><small>Administered this month</small></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-3">
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <h6 class="card-title">Pending Appointments</h6>
+                            <p class="card-text" style="font-size: 32px; color: #0b6e4f; font-weight: bold;">23</p>
+                            <p class="card-text"><small>Scheduled for next 30 days</small></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-3">
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <h6 class="card-title">Low Stock Items</h6>
+                            <p class="card-text" style="font-size: 32px; color: #d32f2f; font-weight: bold;">4</p>
+                            <p class="card-text"><small>Items requiring attention</small></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-3">
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <h6 class="card-title">System Uptime</h6>
+                            <p class="card-text" style="font-size: 32px; color: #4caf50; font-weight: bold;">99.8%</p>
+                            <p class="card-text"><small>This month</small></p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-    </section>
+    </div>
 
-    <section class="card">
-        <div class="section-title">Vaccine Distribution Report</div>
-        <div class="card">
-            <h4>Top Administered Vaccines (January 2025)</h4>
-            <p>• BCG: 42 doses</p>
-            <p>• MMR: 35 doses</p>
-            <p>• Hepatitis B: 32 doses</p>
-            <p>• Polio: 28 doses</p>
-            <p>• DTaP: 10 doses</p>
+    <div class="card mb-4">
+        <div class="card-header bg-success text-white">
+            <h5 class="mb-0">Vaccine Distribution Report</h5>
         </div>
-    </section>
+        <div class="card-body">
+            <h6 class="text-success">Top Administered Vaccines (January 2025)</h6>
+            <ul>
+                <li>BCG: 42 doses</li>
+                <li>MMR: 35 doses</li>
+                <li>Hepatitis B: 32 doses</li>
+                <li>Polio: 28 doses</li>
+                <li>DTaP: 10 doses</li>
+            </ul>
+        </div>
+    </div>
 
-    <section class="card">
-        <div class="section-title">Inventory Status Report</div>
-        <div class="card">
-            <h4>Items by Status</h4>
-            <p>✓ Sufficient Stock: 12 items</p>
-            <p>⚠ Low Stock: 4 items</p>
-            <p>🔴 Critical: 2 items</p>
-            <p>Expired: 0 items</p>
+    <div class="card">
+        <div class="card-header bg-success text-white">
+            <h5 class="mb-0">Inventory Status Report</h5>
         </div>
-    </section>
+        <div class="card-body">
+            <h6 class="text-success">Items by Status</h6>
+            <ul>
+                <li>✓ Sufficient Stock: 12 items</li>
+                <li>⚠ Low Stock: 4 items</li>
+                <li>🔴 Critical: 2 items</li>
+                <li>Expired: 0 items</li>
+            </ul>
+        </div>
+    </div>
 
 </div>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

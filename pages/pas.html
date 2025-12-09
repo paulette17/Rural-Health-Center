@@ -4,82 +4,124 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Patient Appointment Scheduler</title>
-    <link rel="stylesheet" href="../css/styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
 
-<header>
-    <h1>Patient Appointment Scheduler (PAS)</h1>
+<header class="bg-success text-white py-4">
+    <div class="container">
+        <h1>Patient Appointment Scheduler (PAS)</h1>
+    </div>
 </header>
 
-<nav>
-    <a href="../index.html">Home</a>
-    <a href="ims.html">Immunization Monitoring</a>
-    <a href="msis.html">Medical Inventory</a>
-    <a href="pas.html">Appointment Scheduler</a>
-    <a href="report.html">Reports</a>
+<nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #0d4f2f;">
+    <div class="container">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="ims.html">Immunization Monitoring</a></li>
+                <li class="nav-item"><a class="nav-link" href="msis.html">Medical Inventory</a></li>
+                <li class="nav-item"><a class="nav-link active" href="pas.html">Appointment Scheduler</a></li>
+                <li class="nav-item"><a class="nav-link" href="report.html">Reports</a></li>
+            </ul>
+        </div>
+    </div>
 </nav>
 
-<div class="container">
+<div class="container my-5">
 
-    <section class="card">
-        <div class="section-title">Book a New Appointment</div>
-        <div class="grid">
-
-            <div>
-                <h3>Patient Information</h3>
-                <input type="text" placeholder="Patient Name">
-                <input type="text" placeholder="Patient ID / Record Number">
-                <input type="text" placeholder="Contact Number">
-            </div>
-
-            <div>
-                <h3>Appointment Details</h3>
-                <select>
-                    <option>Select Service Type</option>
-                    <option>Immunization</option>
-                    <option>Check-Up</option>
-                    <option>Prenatal</option>
-                    <option>Follow-Up</option>
-                </select>
-                <input type="date" placeholder="Appointment Date">
-                <select>
-                    <option>Select Provider</option>
-                    <option>Nurse Seungkwan</option>
-                    <option>Nurse B</option>
-                    <option>Midwife</option>
-                </select>
-                <button>Book Appointment</button>
-            </div>
-
+    <div class="card mb-4">
+        <div class="card-header bg-success text-white">
+            <h5 class="mb-0">Book a New Appointment</h5>
         </div>
-    </section>
+        <div class="card-body">
+            <div class="row">
+                <div class="col-md-6">
+                    <h6 class="text-success mb-3">Patient Information</h6>
+                    <div class="mb-3">
+                        <input type="text" class="form-control" placeholder="Patient Name">
+                    </div>
+                    <div class="mb-3">
+                        <input type="text" class="form-control" placeholder="Patient ID / Record Number">
+                    </div>
+                    <div class="mb-3">
+                        <input type="text" class="form-control" placeholder="Contact Number">
+                    </div>
+                </div>
 
-    <section class="card">
-        <div class="section-title">Upcoming Appointments</div>
-        <div class="grid">
-            <div class="card">
-                <h4>Vernon Chwe</h4>
-                <p>Service: Immunization</p>
-                <p>Date: Jan 12, 2025</p>
-                <p>Provider: Nurse Seungkwan</p>
-            </div>
-            <div class="card">
-                <h4>Kim Mingyu</h4>
-                <p>Service: Check-Up</p>
-                <p>Date: Jan 14, 2025</p>
-                <p>Provider: Nurse B</p>
-            </div>
-            <div class="card">
-                <h4>Val Yoon</h4>
-                <p>Service: Prenatal</p>
-                <p>Date: Jan 16, 2025</p>
-                <p>Provider: Midwife</p>
+                <div class="col-md-6">
+                    <h6 class="text-success mb-3">Appointment Details</h6>
+                    <div class="mb-3">
+                        <select class="form-select">
+                            <option>Select Service Type</option>
+                            <option>Immunization</option>
+                            <option>Check-Up</option>
+                            <option>Prenatal</option>
+                            <option>Follow-Up</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <input type="date" class="form-control" placeholder="Appointment Date">
+                    </div>
+                    <div class="mb-3">
+                        <select class="form-select">
+                            <option>Select Provider</option>
+                            <option>Nurse Seungkwan</option>
+                            <option>Nurse B</option>
+                            <option>Midwife</option>
+                        </select>
+                    </div>
+                    <button class="btn btn-success w-100">Book Appointment</button>
+                </div>
             </div>
         </div>
-    </section>
+    </div>
+
+    <div class="card">
+        <div class="card-header bg-success text-white">
+            <h5 class="mb-0">Upcoming Appointments</h5>
+        </div>
+        <div class="card-body">
+            <div class="row">
+                <div class="col-md-6 col-lg-4 mb-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <h6 class="card-title">Vernon Chwe</h6>
+                            <p class="card-text mb-1"><small>Service: Immunization</small></p>
+                            <p class="card-text mb-1"><small>Date: Jan 12, 2025</small></p>
+                            <p class="card-text"><small>Provider: Nurse Seungkwan</small></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <h6 class="card-title">Kim Mingyu</h6>
+                            <p class="card-text mb-1"><small>Service: Check-Up</small></p>
+                            <p class="card-text mb-1"><small>Date: Jan 14, 2025</small></p>
+                            <p class="card-text"><small>Provider: Nurse B</small></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <h6 class="card-title">Val Yoon</h6>
+                            <p class="card-text mb-1"><small>Service: Prenatal</small></p>
+                            <p class="card-text mb-1"><small>Date: Jan 16, 2025</small></p>
+                            <p class="card-text"><small>Provider: Midwife</small></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
 </div>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
