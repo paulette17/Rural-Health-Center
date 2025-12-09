@@ -4,47 +4,83 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>RHC Integrated System Prototype</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
 
-<header>
-    <h1>Rural Health Center - Integrated Information System</h1>
+<header class="bg-success text-white py-4">
+    <div class="container">
+        <h1>Rural Health Center - Integrated Information System</h1>
+    </div>
 </header>
 
-<nav>
-    <a href="index.html">Home</a>
-    <a href="pages/ims.html">Immunization Monitoring</a>
-    <a href="pages/msis.html">Medical Inventory</a>
-    <a href="pages/pas.html">Appointment Scheduler</a>
+<nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #0d4f2f;">
+    <div class="container">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="pages/ims.html">Immunization Monitoring</a></li>
+                <li class="nav-item"><a class="nav-link" href="pages/msis.html">Medical Inventory</a></li>
+                <li class="nav-item"><a class="nav-link" href="pages/pas.html">Appointment Scheduler</a></li>
+                <li class="nav-item"><a class="nav-link" href="pages/report.html">Reports</a></li>
+            </ul>
+        </div>
+    </div>
 </nav>
 
-<div class="container">
+<div class="container my-5">
 
-    <section class="card">
-        <div class="section-title"> RHC Information System</div>
-        <p>Welcome!</p>
-    </section>
+    <div class="card mb-4">
+        <div class="card-body">
+            <h5 class="card-title text-success">RHC Information System</h5>
+            <p class="card-text">Welcome to the Rural Health Center Integrated Information System. Select a module from the navigation menu above to get started.</p>
+        </div>
+    </div>
 
-    <section class="grid">
-        <div class="card">
-            <h3>Immunization Monitoring</h3>
-            <p>Manage patient immunization records and vaccine batches.</p>
-            <a href="pages/ims.html"><button>Open IMS</button></a>
+    <div class="row">
+        <div class="col-md-6 col-lg-3 mb-4">
+            <div class="card h-100">
+                <div class="card-body">
+                    <h5 class="card-title text-success">Immunization Monitoring</h5>
+                    <p class="card-text">Manage patient immunization records and vaccine batches.</p>
+                    <a href="pages/ims.html"><button class="btn btn-success w-100">Open IMS</button></a>
+                </div>
+            </div>
         </div>
-        <div class="card">
-            <h3>Medical Supplies Inventory</h3>
-            <p>Track medicine stocks, expiration dates, and supply levels.</p>
-            <a href="pages/msis.html"><button>Open MSIS</button></a>
+        <div class="col-md-6 col-lg-3 mb-4">
+            <div class="card h-100">
+                <div class="card-body">
+                    <h5 class="card-title text-success">Medical Supplies Inventory</h5>
+                    <p class="card-text">Track medicine stocks, expiration dates, and supply levels.</p>
+                    <a href="pages/msis.html"><button class="btn btn-success w-100">Open MSIS</button></a>
+                </div>
+            </div>
         </div>
-        <div class="card">
-            <h3>Patient Appointment Scheduler</h3>
-            <p>Book appointments and view upcoming schedules.</p>
-            <a href="pages/pas.html"><button>Open PAS</button></a>
+        <div class="col-md-6 col-lg-3 mb-4">
+            <div class="card h-100">
+                <div class="card-body">
+                    <h5 class="card-title text-success">Patient Appointment Scheduler</h5>
+                    <p class="card-text">Book appointments and view upcoming schedules.</p>
+                    <a href="pages/pas.html"><button class="btn btn-success w-100">Open PAS</button></a>
+                </div>
+            </div>
         </div>
-    </section>
+        <div class="col-md-6 col-lg-3 mb-4">
+            <div class="card h-100">
+                <div class="card-body">
+                    <h5 class="card-title text-success">Reports</h5>
+                    <p class="card-text">View system reports and analytics.</p>
+                    <a href="pages/report.html"><button class="btn btn-success w-100">Open Reports</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
 
 </div>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

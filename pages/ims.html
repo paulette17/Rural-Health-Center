@@ -4,81 +4,129 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Immunization Monitoring System</title>
-    <link rel="stylesheet" href="../css/styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
 
-<header>
-    <h1>Immunization Monitoring System (IMS)</h1>
+<header class="bg-success text-white py-4">
+    <div class="container">
+        <h1>Immunization Monitoring System (IMS)</h1>
+    </div>
 </header>
 
-<nav>
- <nav>
-    <a href="../index.html">Home</a>
-    <a href="ims.html">IMS</a>
-    <a href="msis.html">MSIS</a>
-    <a href="pas.html">PAS</a>
+<nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #0d4f2f;">
+    <div class="container">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link active" href="ims.html">Immunization Monitoring</a></li>
+                <li class="nav-item"><a class="nav-link" href="msis.html">Medical Inventory</a></li>
+                <li class="nav-item"><a class="nav-link" href="pas.html">Appointment Scheduler</a></li>
+                <li class="nav-item"><a class="nav-link" href="report.html">Reports</a></li>
+            </ul>
+        </div>
+    </div>
 </nav>
 
-</nav>
+<div class="container my-5">
 
-<div class="container">
+    <div class="card mb-4">
+        <div class="card-header bg-success text-white">
+            <h5 class="mb-0">Register Patient Immunization</h5>
+        </div>
+        <div class="card-body">
+            <div class="row">
+                <div class="col-md-6">
+                    <h6 class="text-success mb-3">Patient Details</h6>
+                    <div class="mb-3">
+                        <input type="text" class="form-control" placeholder="Patient Name">
+                    </div>
+                    <div class="mb-3">
+                        <input type="text" class="form-control" placeholder="Child ID / Record Number">
+                    </div>
+                    <div class="mb-3">
+                        <input type="date" class="form-control" placeholder="Date of Birth">
+                    </div>
+                    <div class="mb-3">
+                        <input type="text" class="form-control" placeholder="Parent/Guardian Name">
+                    </div>
+                    <div class="mb-3">
+                        <input type="text" class="form-control" placeholder="Contact Number">
+                    </div>
+                </div>
 
-    <section class="card">
-        <div class="section-title">Register Patient Immunization</div>
-        <div class="grid">
-            <div>
-                <h3>Patient Details</h3>
-                <input type="text" placeholder="Patient Name">
-                <input type="text" placeholder="Child ID / Record Number">
-                <input type="date" placeholder="Date of Birth">
-                <input type="text" placeholder="Parent/Guardian Name">
-                <input type="text" placeholder="Contact Number">
-            </div>
-
-            <div>
-                <h3>Vaccination Details</h3>
-                <select>
-                    <option>Select Vaccine</option>
-                    <option>BCG</option>
-                    <option>Hepatitis B</option>
-                    <option>MMR</option>
-                    <option>DTaP</option>
-                    <option>Polio</option>
-                </select>
-                <input type="text" placeholder="Batch Number">
-                <input type="date" placeholder="Expiry Date">
-                <input type="date" placeholder="Date Given">
-                <button>Save Record</button>
+                <div class="col-md-6">
+                    <h6 class="text-success mb-3">Vaccination Details</h6>
+                    <div class="mb-3">
+                        <select class="form-select">
+                            <option>Select Vaccine</option>
+                            <option>BCG</option>
+                            <option>Hepatitis B</option>
+                            <option>MMR</option>
+                            <option>DTaP</option>
+                            <option>Polio</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <input type="text" class="form-control" placeholder="Batch Number">
+                    </div>
+                    <div class="mb-3">
+                        <input type="date" class="form-control" placeholder="Expiry Date">
+                    </div>
+                    <div class="mb-3">
+                        <input type="date" class="form-control" placeholder="Date Given">
+                    </div>
+                    <button class="btn btn-success w-100">Save Record</button>
+                </div>
             </div>
         </div>
-    </section>
+    </div>
 
-    <section class="card">
-        <div class="section-title">Recent Immunization Records</div>
-        <div class="grid">
-            <div class="card">
-                <h4>Ana Santos</h4>
-                <p>Vaccine: MMR</p>
-                <p>Date: Jan 10, 2025</p>
-                <p>Batch: BMMR-2201</p>
-            </div>
-            <div class="card">
-                <h4>Mark Dela Cruz</h4>
-                <p>Vaccine: Hepatitis B</p>
-                <p>Date: Jan 9, 2025</p>
-                <p>Batch: HBV-0192</p>
-            </div>
-            <div class="card">
-                <h4>Sophia Ramos</h4>
-                <p>Vaccine: Polio</p>
-                <p>Date: Jan 8, 2025</p>
-                <p>Batch: POL-0441</p>
+    <div class="card">
+        <div class="card-header bg-success text-white">
+            <h5 class="mb-0">Recent Immunization Records</h5>
+        </div>
+        <div class="card-body">
+            <div class="row">
+                <div class="col-md-6 col-lg-4 mb-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <h6 class="card-title">Ana Santos</h6>
+                            <p class="card-text mb-1"><small>Vaccine: MMR</small></p>
+                            <p class="card-text mb-1"><small>Date: Jan 10, 2025</small></p>
+                            <p class="card-text"><small>Batch: BMMR-2201</small></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <h6 class="card-title">Mark Dela Cruz</h6>
+                            <p class="card-text mb-1"><small>Vaccine: Hepatitis B</small></p>
+                            <p class="card-text mb-1"><small>Date: Jan 9, 2025</small></p>
+                            <p class="card-text"><small>Batch: HBV-0192</small></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <h6 class="card-title">Sophia Ramos</h6>
+                            <p class="card-text mb-1"><small>Vaccine: Polio</small></p>
+                            <p class="card-text mb-1"><small>Date: Jan 8, 2025</small></p>
+                            <p class="card-text"><small>Batch: POL-0441</small></p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-    </section>
+    </div>
 
 </div>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

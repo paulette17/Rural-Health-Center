@@ -14,9 +14,10 @@
 
 <nav>
     <a href="../index.html">Home</a>
-    <a href="ims.html">IMS</a>
-    <a href="msis.html">MSIS</a>
-    <a href="pas.html">PAS</a>
+    <a href="ims.html">Immunization Monitoring</a>
+    <a href="msis.html">Medical Inventory</a>
+    <a href="pas.html">Appointment Scheduler</a>
+    <a href="report.html">Reports</a>
 </nav>
 
 <div class="container">
@@ -35,9 +36,9 @@
 
             <div>
                 <h3>Low Stock Alerts</h3>
-                <p>• Paracetamol – <b style="color:red;">LOW</b></p>
-                <p>• Syringes – <b style="color:green;">SUFFICIENT</b></p>
-                <p>• BCG Vaccine – <b style="color:darkred;">CRITICAL</b></p>
+                <div class="alert low">• Paracetamol – LOW</div>
+                <div class="alert sufficient">• Syringes – SUFFICIENT</div>
+                <div class="alert critical">• BCG Vaccine – CRITICAL</div>
             </div>
         </div>
     </section>
@@ -49,4 +50,24 @@
                 <h4>Paracetamol</h4>
                 <p>Quantity: 12</p>
                 <p>Expiry: Feb 20, 2025</p>
-                <p>Status: <s
+                <p>Status: <span class="status-low">LOW</span></p>
+            </div>
+            <div class="card">
+                <h4>Syringes (10ml)</h4>
+                <p>Quantity: 250</p>
+                <p>Expiry: Dec 31, 2026</p>
+                <p>Status: <span class="status-sufficient">SUFFICIENT</span></p>
+            </div>
+            <div class="card">
+                <h4>BCG Vaccine</h4>
+                <p>Quantity: 3</p>
+                <p>Expiry: Mar 15, 2025</p>
+                <p>Status: <span class="status-critical">CRITICAL</span></p>
+            </div>
+        </div>
+    </section>
+
+</div>
+
+</body>
+</html>
